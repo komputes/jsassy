@@ -1,2 +1,2 @@
 # jsassy
-awesome javascript sample template
+really awesome javascript sample template
