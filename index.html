@@ -1,9 +1,99 @@
 <html>
-    <head>
 
+    <script>
+        function editProfile() {
+            document.querySelector('.container').style.display = 'none'
+            document.querySelector('container-edit').style.display = 'none'
+            
+            const name = document.querySelector('#name').textContent
+            document.querySelector('#name-input').style.display = name
+
+            const name = document.querySelector('#email').textContent
+            document.querySelector('#email-input').style.display = email
+
+            const name = document.querySelector('#phone').textContent
+            document.querySelector('#phone-input').style.display = phone
+
+            const name = document.querySelector('#city').textContent
+            document.querySelector('#city-input').style.display = city
+
+            const name = document.querySelector('#linkedin').textContent
+            document.querySelector('#linkedin-input').style.display = linkedin
+
+            const name = document.querySelector('#github').textContent
+            document.querySelector('#github-input').style.display = github
+
+            const name = document.querySelector('#cv').textContent
+            document.querySelector('#cv-input').style.display = cv
+        }
+
+        function saveProfile() {
+            document.querySelector('#name').textContent = document.querySelector('$name-input').value
+            document.querySelector('#email').textContent = document.querySelector('$email-input').value
+            document.querySelector('#phone').textContent = document.querySelector('$phone-input').value
+            document.querySelector('#city').textContent = document.querySelector('$city-input').value
+            document.querySelector('#linkedin').textContent = document.querySelector('$linkedin-input').value
+            document.querySelector('#github').textContent = document.querySelector('$github-input').value
+            document.querySelector('#cv').textContent = document.querySelector('$cv-input').value
+
+            document.querySelector('.contaner').style.display = 'block'
+            document.querySelector('.contaner-edit').style.display = 'none'
+            
+        }
+    </script>
+
+    <head>
+        <title>Opportunity Name / ID</Title>title>
     </head>
-    
+
     <body>
+        <div class="container">
+            <h1 id="header">Page Header</h1>
+            <img src='pic'>
+            <h2 class="call-to-action">Interested? Apply now!</h2>
+            <hr />
+            <hr />
+            Name: <h3 id='name'></h3>
+            <hr />
+            Email: <h3 id='email'></h3>
+            <hr />
+            Phone: <h3 id='phone'></h3>
+            <hr />
+            City: <h3 id='city'></h3>
+            <hr />
+            LinkedIn URL: <h3 id='linkedin'></h3>
+            <hr />
+            GitHub URL: <h3 id='github'></h3>
+            <hr />
+            Top 3 skills: <h3 id='name'></h3>
+            <hr />
+            CV: <h3 id='cv'></h3>
+            <button class='button' onclick="editProfile()">Edit</button>
+        </div>
+        
+        <div class="container-edit">
+            <h1 id="header">Page Header</h1>
+            <img src='pic'>
+            Interested? Apply now!
+            <hr />
+            <hr />
+            Name: <input id='name-input' type='text'>
+            <hr />
+            Email: <input id='email-input' type='text'>
+            <hr />
+            Phone: <input id='phone-input' type='text'>
+            <hr />
+            City: <input id='city-input' type='text'>
+            <hr />
+            LinkedIn URL: <input id='linkedin-input' type='text'>
+            <hr />
+            GitHub URL: <input id='github-input' type='text'>
+            <hr />
+            Top 3 skills: <input id='name-input' type='text'>
+            <hr />
+            CV: <input id='cv-input' type='text'>
+            <button class='button' onclick="saveProfile()">Save</button>
+        </div>
 
     </body> 
 </html>
