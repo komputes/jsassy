@@ -6,4 +6,4 @@ WORKDIR /home/app
 
 COPY . .
 
-CMD [ "npm", "start"]
+CMD [ "node", "/home/app/server.js"]
