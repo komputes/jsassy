@@ -6,4 +6,8 @@ WORKDIR /home/app
 
 COPY . .
 
-CMD [ "node", "/home/app/server.js"]
+RUN npm install express
+
+CMD [ "node", "server.js"]
+
+EXPOSE 1337/tcp

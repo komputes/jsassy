@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
 
     <script>
         function editProfile() {
             document.querySelector('.container').style.display = 'none'
-            document.querySelector('container-edit').style.display = 'none'
+            document.querySelector('container-edit').style.display = 'block'
             
             const name = document.querySelector('#name').textContent
             document.querySelector('#name-input').style.display = name
@@ -25,6 +26,8 @@
 
             const name = document.querySelector('#cv').textContent
             document.querySelector('#cv-input').style.display = cv
+
+	    
         }
 
         function saveProfile() {
@@ -42,13 +45,9 @@
         }
     </script>
 
-    <head>
-        <title>Opportunity Name / ID</Title>title>
-    </head>
-
     <body>
         <div class="container">
-            <h1 id="header">Page Header</h1>
+            <h1 id="header">Header</h1>
             <img src='pic'>
             <h2 class="call-to-action">Interested? Apply now!</h2>
             <hr />
@@ -72,7 +71,7 @@
         </div>
         
         <div class="container-edit">
-            <h1 id="header">Page Header</h1>
+            <h1 id="header">Header</h1>
             <img src='pic'>
             Interested? Apply now!
             <hr />

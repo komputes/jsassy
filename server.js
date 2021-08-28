@@ -13,6 +13,6 @@ app.get('/pic', function (req, res) {
     res.end(img, 'binary');
 });
 
-app.listen(3000, function () {
+app.listen(1337, function () {
     console.log("Looks good. Node.js app is listening on :1337");
 });
