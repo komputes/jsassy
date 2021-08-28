@@ -1,0 +1,13 @@
+{
+  "name": "jsassy",
+  "version": "1.0.0",
+  "description": "jsassy a Node.js on Docker example",
+  "author": "komputes <komputes@gmail.com>",
+  "main": "/home/app/server.js",
+  "scripts": {
+    "start": "node /home/app/server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
