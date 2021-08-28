@@ -1,4 +1,4 @@
-FROM node
+FROM node:13-alpine
 
 ENV FOO=bar \
     BAR=foo
